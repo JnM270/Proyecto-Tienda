@@ -1,0 +1,45 @@
+.store-body {
+
+    background-color: #ffe7af;
+    height: 100%; 
+}
+
+.store-container {
+    padding: 20px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+  }
+  
+  .product-item p {
+    color: #666;
+  }
+  

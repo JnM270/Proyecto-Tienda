@@ -1,0 +1,21 @@
+<div class="store-body">
+  <div class="store-container">
+    <h2>Lista de Productos</h2>
+    <div class="search-bar">
+      <input matInput (keyup)="Filtrar($event)" placeholder="Buscador">
+    </div>
+    <div class="product-list">
+      <div class="product-item" *ngFor="let prod of filtrarProducto">
+        <img [src]="prod.imagen" [alt]="prod.nombre">
+        <h3>{{ prod.nombre }}</h3>
+        <p>Precio: {{ prod.precio }}</p>
+        <p>Cantidad: {{ prod.cantidad }}</p>
+        <p>Fecha: {{ prod.fecha }}</p>
+        <p>Proveedor: {{ prod.proveedor }}</p>
+      </div>
+    </div>
+</div>
+
+
+ 
+ 

@@ -1,0 +1,8 @@
+<select (change)="cambiaSeccion($event)">
+    <option *ngFor="let seccion of secciones" [value]="seccion">{{ seccion }}</option>
+  </select>
+  <ng-container [ngSwitch]="seleccionada">
+    <app-home *ngSwitchCase="'Inicio'"></app-home>
+    <app-store *ngSwitchCase="'Tienda'"></app-store>
+  </ng-container>
+  
